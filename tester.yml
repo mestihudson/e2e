@@ -1,0 +1,8 @@
+version: '2'
+services:
+  tester:
+    image: jotschi/protractor
+    working_dir: "/app"
+    command: ["/app/e2e.sh"]
+    volumes:
+    - "./:/app"
